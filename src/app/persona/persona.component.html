@@ -1,0 +1,50 @@
+<nav class="navbar navbar-extend-lg" style="background-color: rgba(20, 20,200, 0.5)">
+    <p class="h2">Formulario</p>
+</nav>
+
+<div class="container">
+    <form action="">
+
+        <br>
+        <input type="text" class="form-control" name="Nombre" [(ngModel)]="persona.nombre" placeholder="Nombre">
+
+        <br>
+        <input type="text" class="form-control" name="Apellido" [(ngModel)]="persona.apellido" placeholder="Apellido">
+
+        <br>
+        <input type="text" class="form-control" name="Telefono" [(ngModel)]="persona.telefono" placeholder="Telefono">
+
+        <br>
+
+            <button class="btn btn-success">Enviar</button>
+        
+    </form>
+
+    <div class="container" style="margin-top: 20px;" >
+        <div class="card">
+            <div class="card-header">
+                <h3>Persona</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-success" >
+                    <thead>
+                        <tr class="text-center">
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Telefono</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <td>{{persona.id}}</td>
+                            <td>{{persona.nombre}}</td>
+                            <td>{{persona.apellido}}</td>
+                            <td>{{persona.telefono}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
